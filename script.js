@@ -12,35 +12,36 @@ const choices = ["paper","scissors","rock"];
 function game(userChoice){
   let random = Math.floor(Math.random()*3);
   let result = userChoice + choices[random];
+  let num;
   switch(result){
     case "paperrock":
       message.innerHTML = "Paper covers Rock: You win!!!";
-      let num = parseInt(userScore.textContent);
+      num = parseInt(userScore.textContent);
       userScore.innerHTML = num + 1;
       break;
     case "scissorspaper":
       message.innerHTML = "Scissors cuts Paper: You win!!!";
-      let num = parseInt(userScore.textContent);
+      num = parseInt(userScore.textContent);
       userScore.innerHTML = num + 1;
       break;
     case "rockscissors":
       message.innerHTML = "Rock breaks Scissors: You win!!!";
-      let num = parseInt(userScore.textContent);
+      num = parseInt(userScore.textContent);
       userScore.innerHTML = num + 1;
       break;
     case "rockpaper":
       message.innerHTML = "Paper covers Rock: You lose!!!";
-      let num = parseInt(machineScore.textContent);
+      num = parseInt(machineScore.textContent);
       machineScore.innerHTML = num + 1;
       break;
     case "paperscissors":
       message.innerHTML = "Scissors cuts Paper: You lose!!!";
-      let num = parseInt(machineScore.textContent);
+      num = parseInt(machineScore.textContent);
       machineScore.innerHTML = num + 1;
       break;
     case "scissorsrock":
       message.innerHTML = "Rock breaks Scissors: You lose!!!";
-      let num = parseInt(machineScore.textContent);
+      num = parseInt(machineScore.textContent);
       machineScore.innerHTML = num + 1;
       break;
   }
