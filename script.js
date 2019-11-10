@@ -9,7 +9,7 @@ const rock = document.getElementById("rock");
 const choices = ["paper","scissors","rock"];
 
 
-function game(userChoice){
+const game = (userChoice) => {
   let random = Math.floor(Math.random()*3);
   let result = userChoice + choices[random];
   let num;
@@ -47,15 +47,14 @@ function game(userChoice){
   }
 }
 
-rock.addEventListener('click', function(){
+rock.addEventListener('click', () => {
   game("rock")
 })
 
-scissors.addEventListener('click', function(){
+scissors.addEventListener('click', () => {
   game("scissors")
 })
 
-paper.addEventListener('click', function(){
+paper.addEventListener('click', () => {
   game("paper")
 })
-console.log("Yeah whatever")
