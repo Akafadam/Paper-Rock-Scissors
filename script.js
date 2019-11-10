@@ -5,10 +5,11 @@ const message = document.querySelector(".message__text");
 const scissors = document.getElementById("scissors");
 const paper = document.getElementById("paper");
 const rock = document.getElementById("rock");
+
 const choices = ["paper","scissors","rock"];
 
 
-const game = (userChoice) => {
+function game(userChoice){
   let random = Math.floor(Math.random()*3);
   let result = userChoice + choices[random];
   let num;
